@@ -17,7 +17,10 @@ classifiers = [
     "Operating System :: OS Independent",
     "Typing :: Typed",
 ]
-dependencies = []
+dependencies = [
+    "defusedxml>=0.7,<1",
+    "openpyxl>=3.1,<4",
+]
 
 [project.urls]
 Homepage = "https://github.com/Trysac/u077-excel-normalizer"
