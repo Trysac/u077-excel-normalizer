@@ -5,11 +5,13 @@
 | Tool | Why |
 |---|---|
 | Python >= 3.10 | Widest supported range that still allows modern typing syntax. |
+| openpyxl (>=3.1,<4) | Reads `.xlsx` sheets, merged ranges and cached values. |
+| defusedxml (>=0.7,<1) | Protects the XML parsing done by openpyxl against entity attacks. |
 | uv | Fast, reproducible environments and builds on Windows and Linux. |
 | hatchling | Simple, standards-based build backend; no setup.py. |
 | ruff | Lint and format in one fast tool. |
 | mypy (strict) | Catches type errors before release; the package ships `py.typed`. |
-| pytest + pytest-cov | De facto standard test runner with branch coverage. |
+| pytest + pytest-cov | Test runner with branch coverage. |
 | gitleaks | Secret scanning locally and in CI. |
 | GitHub Actions + Dependabot | Thin CI wrapper over the local gates; weekly dependency updates. |
 
